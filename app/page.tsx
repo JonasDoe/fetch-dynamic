@@ -1,6 +1,6 @@
 async function fetchNews() {
     try {
-        const res = await fetch('http://78.46.254.73:3000/api/news', {cache: 'no-store'});
+        const res = await fetch('http://localhost:3001/api/news', {cache: 'no-store'});
         return await res.json();
     } catch (err) {
         console.error(err);
